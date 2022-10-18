@@ -1,0 +1,29 @@
+Lamport clocks cannot tell us if a message was concurrent, and cannot be used to infer causality between events. Vector clocks are a more sophisticated variant which gives us more guarantees, including knowledge of concurrency & causal history.
+
+
+Assignment topics : 
+
+1. Deadlock algorithm
+2. Lamport clocks
+3. Vector clocks
+4. Distributed Mutual Exclusion (Token based)
+5. Chat Server using TCP sockets
+6. Implementation of concurrent echo client-server application
+7. Remote Procedure Call (RPC) with file transfer
+8. Connection-oriented communication using TCP/IP
+9. Connection-less Communication using UDP
+10. RESTful Web Services
+11. Paxos
+12. A program to implement edge chasing distributed deadlock detection algorithm.
+13. A Program to implement termination detection algorithm.
+
+
+## links : 
+
+1. https://www.studocu.com/in/document/dr-apj-abdul-kalam-technical-university/distributed-system/distributed-systems-lab-manual/21745618
+
+2. https://gnindia.dronacharya.info/CSE/Downloads/Labmanuals/Distributed-System-Lab-Manual.pdf
+
+3. https://www.miet.ac.in/assets/uploads/cs/instruction_materials/distributed_sys_lab_manual.pdf
+
+4. https://www.coursehero.com/file/96746254/Distributed-systems-Laboratory-Manualpdf/
