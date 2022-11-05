@@ -1,0 +1,25 @@
+{
+  "name": "distributed_systems_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mijanur-rahman-40/distributed_systems_assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mijanur-rahman-40/distributed_systems_assignment/issues"
+  },
+  "homepage": "https://github.com/mijanur-rahman-40/distributed_systems_assignment#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

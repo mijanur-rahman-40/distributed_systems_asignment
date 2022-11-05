@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 #define SIZE 10
 using namespace std;
 
