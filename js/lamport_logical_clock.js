@@ -16,17 +16,15 @@ const max1 = (a, b) => {
 const display = (e1, e2, p1, p2) => {
     let i;
 
-    document.write(`<br />The time stamps of events in P1:<br />`);
-
+    console.log(`The time stamps of events in P1:<br />`);
     for (i = 0; i < e1; i++) {
-        document.write(`${p1[i]} `);
+        console.log(`${p1[i]} `);
     }
 
-    document.write(`<br />The time stamps of events in P2:<br />`);
-
+    console.log(`The time stamps of events in P2:<br />`);
     // Print the array p2[]
     for (i = 0; i < e2; i++)
-        document.write(`${p2[i]} `);
+        console.log(`${p2[i]} `);
 }
 
 // Function to find the timestamp of events
@@ -41,13 +39,12 @@ const lamportLogicalClock = (e1, e2, m) => {
         p2[i] = i + 1;
 
     for (i = 0; i < e2; i++)
-        document.write(`\te2${i + 1}`)
+        console.log(`\te2${i + 1}`)
 
     for (i = 0; i < e1; i++) {
-
-        document.write(`<br/>e1${i + 1} `)
+        console.log(`<br/>e1${i + 1} `)
         for (j = 0; j < e2; j++)
-            document.write(`${m[i][j]}\t`);
+            console.log(`${m[i][j]}\t`);
     }
 
     for (i = 0; i < e1; i++) {

@@ -1,25 +1,25 @@
 #include <stdio.h>
-#include <conio.h>
-#include <stdio.h>
 #include <stdlib.h>
+
 long *p1(int i, long *comp);
 long *p2(int i, long *comp);
 long *p3(int i, long *comp);
+int rand(void);
 void main()
 {
     long start[] = {0, 0, 0}, *vector;
-    clrscr();
-    while (!kbhit())
+    // clrscr();
+    while (!getc)
     {
         p1(1, &start[0]);
     }
-    printf(“\n Process Vector\n”);
+    printf("\n Process Vector\n");
     vector = p1(0, &start[0]);
-    printf(“p1[% ld % ld % ld]\n”, *vector, *(vector + 1), *(vector + 2));
+    printf("p1[% ld % ld % ld]\n", *vector, *(vector + 1), *(vector + 2));
     vector = p2(0, &start[0]);
-    printf(“p2[% ld % ld % ld]\n”, *vector, *(vector + 1), *(vector + 2));
+    printf("p2[% ld % ld % ld]\n", *vector, *(vector + 1), *(vector + 2));
     vector = p3(0, &start[0]);
-    printf(“p3[% ld % ld % ld]\n”, *vector, *(vector + 1), *(vector + 2));
+    printf("p3[% ld % ld % ld]\n", *vector, *(vector + 1), *(vector + 2));
 }
 long *p1(int i, long *comp)
 {
@@ -32,7 +32,9 @@ long *p1(int i, long *comp)
             a[1] = *(comp + 1);
         if (*(comp + 2) > a[2])
             a[2] = *(comp + 2);
-        next = random(2);
+        // next = random(2)
+        next = (rand() % 5) + 1;
+        ;
         if (next == 0)
             p2(1, &a[0]);
         else if (next == 1)
@@ -54,7 +56,8 @@ long *p2(int i, long *comp)
             b[0] = *(comp);
         if (*(comp + 2) > b[2])
             b[2] = *(comp + 2);
-        next = random(2);
+        // next = random(2);
+        next = (rand() % 5) + 1;
         if (next == 0)
             p1(1, &b[0]);
         else if (next == 1)
@@ -76,7 +79,8 @@ long *p3(int i, long *comp)
             c[0] = *(comp);
         if (*(comp + 1) > c[1])
             c[1] = *(comp + 1);
-        next = random(2);
+        // next = random(2);
+        next = (rand() % 5) + 1;
         if (next == 0)
             p1(1, &c[0]);
         return &c[0];
