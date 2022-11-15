@@ -27,3 +27,6 @@ Assignment topics :
 3. https://www.miet.ac.in/assets/uploads/cs/instruction_materials/distributed_sys_lab_manual.pdf
 
 4. https://www.coursehero.com/file/96746254/Distributed-systems-Laboratory-Manualpdf/
+
+
+https://people.cs.rutgers.edu/~pxk/417/notes/logical-clocks.html
