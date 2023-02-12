@@ -43,6 +43,7 @@ for (let i = 1; i <= parseInt(messages); i++) {
     } else {
         llc.processes[receiveProcess - 1].events[receiveEvent - 1] = llc.processes[sendProcess - 1].events[sendEvent - 1] + 1;
     }
+    
     for (let j = receiveEvent; j < llc.processes[receiveProcess - 1].events.length; j++) {
         llc.processes[receiveProcess - 1].events[j] = llc.processes[receiveProcess - 1].events[j - 1] + 1;
     }
